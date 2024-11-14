@@ -5,9 +5,12 @@ using UnityEngine;
 public class WeaponPickup : MonoBehaviour
 {
     [SerializeField] Weapon weaponHolder;
+    [SerializeField] Bullet bullet;
     Weapon weapon;
     void Awake(){
-        weapon = weaponHolder;
+        weapon = Instantiate(weaponHolder);
+        weapon.bullet = bullet;
+        weapon.gameObject.SetActive(false);
     }
     void Start()
     {
@@ -22,6 +25,9 @@ public class WeaponPickup : MonoBehaviour
             weapon.transform.SetParent(other.transform);
             weapon.transform.localPosition = Vector3.zero;
             weapon.parentTransform = other.transform;
+            weapon.bullet = bullet;
+            weapon.gameObject.SetActive(true);
+            weapon.StartFiring();
             TurnVisual(true);
             Destroy(gameObject);
         }else{
@@ -38,7 +44,6 @@ public class WeaponPickup : MonoBehaviour
     }
 
     void TurnVisual(bool on, Weapon weapon){
-        TurnVisual(on);
         if(weapon != null){
             foreach(var sprite in weapon.GetComponentsInChildren<SpriteRenderer>()){
                 sprite.color = on ? Color.white : new Color(1, 1, 1, 0); 

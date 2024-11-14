@@ -20,14 +20,17 @@ public class LevelManager : MonoBehaviour
     {
         if (animator != null){
             animator.enabled = true;
-            animator.SetTrigger("TransitionState");
+            
+            animator.SetTrigger("endTransition");
         }
         yield return new WaitForSeconds(1);
-        yield return new WaitForEndOfFrame();
+        
         yield return SceneManager.LoadSceneAsync(sceneName);
 
         if (Player.Instance != null){
-            Player.Instance.transform.position = new Vector2(0, -4.5f);
+            Player.Instance.transform.position = new(0, -4.5f);
         }
-    }
+        animator.SetTrigger("startTransition");
+        
+    } 
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4711816366128108884}
   - component: {fileID: 9179531438321444736}
   - component: {fileID: 7655454019962619862}
-  - component: {fileID: 8440458355945263765}
+  - component: {fileID: -6266557441820515173}
   m_Layer: 0
   m_Name: Weapon4
   m_TagString: Untagged
@@ -109,7 +109,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8440458355945263765
+--- !u!114 &-6266557441820515173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,13 +118,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1133535171646912070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b22b0c3885699640a82313df3442061, type: 3}
+  m_Script: {fileID: 11500000, guid: 240f942b7a957454097958d5bddca764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentTransform: {fileID: 0}
   shootIntervalInSeconds: 0.5
-  bullet: {fileID: 7364429293587709986, guid: c4f4dda236349454082e962aceab24c5, type: 3}
+  bullet: {fileID: -4875419739750900618, guid: c4f4dda236349454082e962aceab24c5, type: 3}
   bulletSpawnPoint: {fileID: 391797968207840830}
+  parentTransform: {fileID: 0}
 --- !u!1 &4586726676783292362
 GameObject:
   m_ObjectHideFlags: 0

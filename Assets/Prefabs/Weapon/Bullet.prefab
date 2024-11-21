@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7310053977302161291}
   - component: {fileID: 1589830424746386419}
   - component: {fileID: 7576408947973093355}
-  - component: {fileID: 7364429293587709986}
-  - component: {fileID: -4075431981734037894}
+  - component: {fileID: -4875419739750900618}
+  - component: {fileID: 76267902438205639}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -182,7 +182,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &7364429293587709986
+--- !u!114 &-4875419739750900618
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,11 +191,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3477700580430741603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f9ddeccd20054c4d96bf8b9fc01b6c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c899f45e9285b843a64b6614b752d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 20
---- !u!114 &-4075431981734037894
+  bulletSpeed: 2000
+  damage: 10
+--- !u!114 &76267902438205639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,8 +205,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3477700580430741603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 663e987960cd2454286db3af982a6c67, type: 3}
+  m_Script: {fileID: 11500000, guid: b8126a54736f927498e6c9f51fa483f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  bullet: {fileID: -4875419739750900618}
   damage: 10

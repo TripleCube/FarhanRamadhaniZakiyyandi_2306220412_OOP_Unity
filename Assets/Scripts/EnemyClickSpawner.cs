@@ -6,7 +6,7 @@ using UnityEngine.Assertions;
 
 public class EnemyClickSpawner : MonoBehaviour
 {
-    [SerializeField] private Enemy[] enemyVariants;
+    [SerializeField] private Enemy1[] enemyVariants;
     [SerializeField] private int selectedVariant = 0;
 
 

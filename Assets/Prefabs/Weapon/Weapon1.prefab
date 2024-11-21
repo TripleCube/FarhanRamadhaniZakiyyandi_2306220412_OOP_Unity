@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 6505501193157088221}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4166667, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1919673795816596693}
   - component: {fileID: 2276070888068304030}
   - component: {fileID: 3667041699032864546}
-  - component: {fileID: 4147009131133667014}
+  - component: {fileID: 6441037778480823783}
   m_Layer: 0
   m_Name: Weapon1
   m_TagString: Untagged
@@ -140,7 +140,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4147009131133667014
+--- !u!114 &6441037778480823783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,13 +149,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6939987301029803814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b22b0c3885699640a82313df3442061, type: 3}
+  m_Script: {fileID: 11500000, guid: 240f942b7a957454097958d5bddca764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentTransform: {fileID: 0}
-  shootIntervalInSeconds: 0.5
-  bullet: {fileID: 7364429293587709986, guid: c4f4dda236349454082e962aceab24c5, type: 3}
+  shootIntervalInSeconds: 0.1
+  bullet: {fileID: -4875419739750900618, guid: c4f4dda236349454082e962aceab24c5, type: 3}
   bulletSpawnPoint: {fileID: 5965911230890786521}
+  parentTransform: {fileID: 0}
 --- !u!1001 &5380212682081792542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -164,6 +164,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1919673795816596693}
     m_Modifications:
+    - target: {fileID: -4875419739750900618, guid: c4f4dda236349454082e962aceab24c5, type: 3}
+      propertyPath: bulletSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 314067449620669194, guid: c4f4dda236349454082e962aceab24c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.043294266

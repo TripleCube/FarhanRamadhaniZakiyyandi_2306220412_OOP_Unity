@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 1276605432553578152}
   - component: {fileID: -3094652168636370492}
   - component: {fileID: -6894511867935997038}
-  - component: {fileID: -9209191244725100577}
   - component: {fileID: 6427822026399570240}
+  - component: {fileID: -4083083883330361883}
   m_Layer: 0
   m_Name: EnemyForward
   m_TagString: Enemy
@@ -220,24 +220,6 @@ MonoBehaviour:
   blinkInterval: 0.1
   blinkMaterial: {fileID: 2100000, guid: 89f559623bd5e3647ad5657c05a9822c, type: 2}
   isInvincible: 0
---- !u!114 &-9209191244725100577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6873743994826000283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cfa1917b527f649b304a6af6618fd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Level: 0
-  enemyKilledEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  enemySpawner: {fileID: 0}
-  combatManager: {fileID: 0}
 --- !u!114 &6427822026399570240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,3 +239,21 @@ MonoBehaviour:
   enemySpawner: {fileID: 0}
   combatManager: {fileID: 0}
   moveSpeed: 4
+--- !u!114 &-4083083883330361883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6873743994826000283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27cfa1917b527f649b304a6af6618fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level: 0
+  enemyKilledEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  enemySpawner: {fileID: 0}
+  combatManager: {fileID: 0}

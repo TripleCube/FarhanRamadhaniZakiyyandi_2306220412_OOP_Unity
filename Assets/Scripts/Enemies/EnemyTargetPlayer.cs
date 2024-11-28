@@ -8,16 +8,15 @@ public class EnemyTargetPlayer : Enemy1
     private Vector3 screenBounds;
     Rigidbody2D rb;
 
-    void RandomizeSpawnPoint()
-    {
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        transform.position = new Vector3(Random.Range(-screenBounds.x, screenBounds.x), Random.Range(-screenBounds.y, screenBounds.y), 0);
-    }
-
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        RandomizeSpawnPoint();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Awake()
+    {
+        PickRandomPositions();
     }
 
     void FixedUpdate()
@@ -38,5 +37,31 @@ public class EnemyTargetPlayer : Enemy1
         {
             Destroy(gameObject);
         }
+    }
+
+    private void PickRandomPositions()
+    {
+        Vector2 randPos;
+        Vector2 dir;
+
+        if (Random.Range(-1, 1) >= 0)
+        {
+            dir = Vector2.right;
+        }
+        else
+        {
+            dir = Vector2.left;
+        }
+
+        if (dir == Vector2.right)
+        {
+            randPos = new(1.1f, Random.Range(0.1f, 0.95f));
+        }
+        else
+        {
+            randPos = new(-0.01f, Random.Range(0.1f, 0.95f));
+        }
+
+        transform.position = Camera.main.ViewportToWorldPoint(randPos) + new Vector3(0, 0, 10);
     }
 }

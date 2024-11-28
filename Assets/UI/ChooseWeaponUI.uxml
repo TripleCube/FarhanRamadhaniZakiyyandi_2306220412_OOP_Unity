@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/StylesheetText.uss?fileID=7433441132597879392&amp;guid=1d47c288705305c4f9b6f2e7b55a4f8e&amp;type=3#StylesheetText" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="Container" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="GALAXY SHOOTER" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" enable-rich-text="false" class="label" style="-unity-font-style: bold; font-size: 14px; -unity-font: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=0d880318fe14e354787779c276171d52&amp;type=3#NotInter-Regular&quot;);" />
+            <ui:Label tabindex="-1" text="SELECT WEAPON" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Subtitle" enable-rich-text="false" class="label" style="-unity-text-align: upper-center; -unity-font-style: bold; font-size: 14px; -unity-font: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=0d880318fe14e354787779c276171d52&amp;type=3#NotInter-Regular&quot;);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

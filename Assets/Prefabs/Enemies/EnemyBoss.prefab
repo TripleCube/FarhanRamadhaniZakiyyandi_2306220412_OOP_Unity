@@ -47,9 +47,9 @@ GameObject:
   - component: {fileID: -533129616612050530}
   - component: {fileID: 1673908021474446088}
   - component: {fileID: -1352295158375166948}
-  - component: {fileID: 229822350961554650}
   - component: {fileID: 4358413556247540375}
   - component: {fileID: -3411906770507460874}
+  - component: {fileID: 6692436448025330974}
   m_Layer: 0
   m_Name: EnemyBoss
   m_TagString: Enemy
@@ -254,24 +254,6 @@ MonoBehaviour:
   blinkInterval: 0.1
   blinkMaterial: {fileID: 2100000, guid: 89f559623bd5e3647ad5657c05a9822c, type: 2}
   isInvincible: 0
---- !u!114 &229822350961554650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7528449131080333072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cfa1917b527f649b304a6af6618fd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Level: 0
-  enemyKilledEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  enemySpawner: {fileID: 0}
-  combatManager: {fileID: 0}
 --- !u!114 &4358413556247540375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +284,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   weapon: {fileID: 6441037778480823783, guid: 932c15ef1ef70bb45bb7ae380e57cbe7, type: 3}
+--- !u!114 &6692436448025330974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528449131080333072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27cfa1917b527f649b304a6af6618fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level: 0
+  enemyKilledEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  enemySpawner: {fileID: 0}
+  combatManager: {fileID: 0}
 --- !u!1001 &5416372880144153034
 PrefabInstance:
   m_ObjectHideFlags: 0

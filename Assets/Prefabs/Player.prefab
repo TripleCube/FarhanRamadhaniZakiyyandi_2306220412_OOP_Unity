@@ -204,9 +204,9 @@ GameObject:
   - component: {fileID: 201767381874132010}
   - component: {fileID: 5578540206978335832}
   - component: {fileID: -6644165811405523149}
-  - component: {fileID: 4010578626028580841}
   - component: {fileID: -1039755308212958718}
-  - component: {fileID: 8288990751254806163}
+  - component: {fileID: -4462031941209426290}
+  - component: {fileID: 2202983484958924032}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -381,18 +381,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4010578626028580841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809942743444354169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 821a66c84e97bfd42adf6afad7c960d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-1039755308212958718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,7 +397,19 @@ MonoBehaviour:
   blinkInterval: 0.1
   blinkMaterial: {fileID: 2100000, guid: 6d6141cb9be686c448c79f51ff7c6d06, type: 2}
   isInvincible: 0
---- !u!114 &8288990751254806163
+--- !u!114 &-4462031941209426290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809942743444354169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821a66c84e97bfd42adf6afad7c960d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2202983484958924032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -423,8 +423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: {x: 10, y: 10}
   timeToFullSpeed: {x: 2, y: 2}
-  timeToStop: {x: 2.5, y: 2.5}
-  stopClamp: {x: 2.5, y: 2.5}
+  timeToStop: {x: 1, y: 1}
+  stopClamp: {x: 1, y: 1}
 --- !u!1 &7975964681628003695
 GameObject:
   m_ObjectHideFlags: 0

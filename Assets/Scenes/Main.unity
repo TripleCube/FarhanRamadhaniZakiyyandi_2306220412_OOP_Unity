@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f3525b4466c9e4088576de98890356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnedEnemy: {fileID: 1636011005195696516, guid: b88ed3ee38a4de146b66d009ecec21ed, type: 3}
+  spawnedEnemy: {fileID: 1531912805243648217, guid: b88ed3ee38a4de146b66d009ecec21ed, type: 3}
   minimumKillsToIncreaseSpawnCount: 3
   totalKill: 0
   spawnInterval: 3
@@ -176,6 +176,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2389902829980036977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &762205397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762205399}
+  - component: {fileID: 762205398}
+  m_Layer: 5
+  m_Name: UIDocument
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &762205398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762205397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 0f1fc44e7dffd64419833e33fd5076ed, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 9c6e22f11aa33ce49be5d47d0f13e028, type: 3}
+  m_SortingOrder: 0
+--- !u!4 &762205399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762205397}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1230914614345283458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f3525b4466c9e4088576de98890356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnedEnemy: {fileID: -9209191244725100577, guid: 0ac402d68f3152e4ca2de1787cf1b756, type: 3}
+  spawnedEnemy: {fileID: 6427822026399570240, guid: 0ac402d68f3152e4ca2de1787cf1b756, type: 3}
   minimumKillsToIncreaseSpawnCount: 3
   totalKill: 0
   spawnInterval: 3
@@ -242,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f3525b4466c9e4088576de98890356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnedEnemy: {fileID: 229822350961554650, guid: d1ac14a7aa2c5d148915f2e954c16341, type: 3}
+  spawnedEnemy: {fileID: 6692436448025330974, guid: d1ac14a7aa2c5d148915f2e954c16341, type: 3}
   minimumKillsToIncreaseSpawnCount: 1
   totalKill: 0
   spawnInterval: 3
@@ -347,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f3525b4466c9e4088576de98890356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnedEnemy: {fileID: 629943866713167572, guid: a14f9492286840d4f900c1806cbeae3e, type: 3}
+  spawnedEnemy: {fileID: -8979467645600895093, guid: a14f9492286840d4f900c1806cbeae3e, type: 3}
   minimumKillsToIncreaseSpawnCount: 3
   totalKill: 0
   spawnInterval: 3
@@ -400,3 +448,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2389902829980036977}
+  - {fileID: 762205399}

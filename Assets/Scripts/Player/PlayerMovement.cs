@@ -6,10 +6,10 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] Vector2 maxSpeed;
-    [SerializeField] Vector2 timeToFullSpeed;
-    [SerializeField] Vector2 timeToStop;
-    [SerializeField] Vector2 stopClamp;
+    [SerializeField] Vector2 maxSpeed = new(10f, 10f);
+    [SerializeField] Vector2 timeToFullSpeed  = new(2f, 2f);
+    [SerializeField] Vector2 timeToStop = new(2.5f, 2.5f);
+    [SerializeField] Vector2 stopClamp = new(2.5f, 2.5f);
     Vector2 moveDirection;
     Vector2 moveVelocity;
     Vector2 moveFriction;
